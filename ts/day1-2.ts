@@ -1,20 +1,13 @@
-import { readInputFileLines } from './base';
-
-const main = () => {
-    const lines = readInputFileLines();
-
-    const nums: number[] = lines
-        .map(line => parseInt(line));
+export const solve : SolveFunc = (lines: string[]) => {
+    const nums: number[] = lines.map(line => parseInt(line));
 
     for (let i=0; i<nums.length; i++) {
         for (let j=i+1; j<nums.length; j++) {
             for (let k=j+1; k<nums.length; k++) {
                 if (nums[i] + nums[j] + nums[k] === 2020) {
-                    return nums[i]*nums[j]*nums[k];
+                    return (nums[i]*nums[j]*nums[k]).toString();
                 }
             }
         }
     }
 }
-
-console.log(main());
