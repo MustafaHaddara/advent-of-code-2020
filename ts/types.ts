@@ -1,6 +1,7 @@
 interface SolveFunc {
-    (lines: string[]): string;
+  (lines: string[]): string;
 }
 interface DaySolver {
-    solve: SolveFunc
+  solve: SolveFunc;
+  testInput: string[];
 }

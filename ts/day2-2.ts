@@ -5,6 +5,8 @@ export const solve: SolveFunc = (lines: string[]) => {
     .length.toString();
 };
 
+export const testInput = ['1-3 a: abcdef', '1-3 b: cdefg', '2-9 c: ccccccccc'];
+
 type Password = { p1: number; p2: number; letter: string; password: string };
 
 const parseLine = (line: string): Password => {
