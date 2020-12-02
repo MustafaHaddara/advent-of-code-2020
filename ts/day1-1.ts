@@ -11,3 +11,5 @@ export const solve: SolveFunc = (lines: string[]) => {
     }
   }
 };
+
+export const testInput = ['1721', '979', '366', '299', '675', '1456'];
