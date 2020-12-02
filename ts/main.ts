@@ -1,4 +1,5 @@
 import fs = require('fs');
+import { DaySolver } from './types';
 
 const getLinesFromFile = (qNum) => {
   const num = qNum.split('-')[0];

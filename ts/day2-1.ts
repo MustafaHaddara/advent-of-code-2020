@@ -1,3 +1,5 @@
+import { SolveFunc } from './types';
+
 export const solve: SolveFunc = (lines: string[]) => {
   return lines
     .map((line) => parseLine(line))

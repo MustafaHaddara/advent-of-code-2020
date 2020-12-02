@@ -1,7 +1,7 @@
-interface SolveFunc {
+export interface SolveFunc {
   (lines: string[]): string;
 }
-interface DaySolver {
+export interface DaySolver {
   solve: SolveFunc;
   testInput: string[];
 }
