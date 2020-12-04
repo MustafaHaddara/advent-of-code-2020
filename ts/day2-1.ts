@@ -2,6 +2,7 @@ import { SolveFunc } from './types';
 
 export const solve: SolveFunc = (lines: string[]) => {
   return lines
+    .filter((line: string) => line.length > 0)
     .map((line) => parseLine(line))
     .filter((spec) => validatePassword(spec))
     .length.toString();

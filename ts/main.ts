@@ -4,10 +4,7 @@ import { DaySolver } from './types';
 const getLinesFromFile = (qNum) => {
   const num = qNum.split('-')[0];
   const fname = `inputs/day${num}.txt`;
-  return fs
-    .readFileSync(fname, 'utf8')
-    .split('\n')
-    .filter((line: string) => line.length > 0);
+  return fs.readFileSync(fname, 'utf8').split('\n');
 };
 
 const getModule = async (qNum) => {
